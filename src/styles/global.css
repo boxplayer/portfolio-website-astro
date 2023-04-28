@@ -1,4 +1,14 @@
 /* Global variables */
+
+/* Register your custom font family and tell the browser where to find it. */
+@font-face {
+	font-family: 'DistantGalaxy';
+	src: url('/fonts/GTWalsheimPro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	/* Colors */
 	--gray-0: #090b11;
@@ -12,14 +22,18 @@
 	--gray-700: #c3cadb;
 	--gray-800: #e3e6ee;
 	--gray-900: #f3f4f7;
-	--gray-999-basis: 0, 0%, 100%;
+	--gray-999-basis: 0,
+		0%,
+		100%;
 	--gray-999_40: hsla(var(--gray-999-basis), 0.4);
 	--gray-999: #ffffff;
 
-	--accent-light: #c561f6;
-	--accent-regular: #7611a6;
+	/* --accent-light: #c561f6; */
+	/* --accent-regular: #7611a6; */
+	--accent-light: #3d4663;
+	--accent-regular: #090b11;
 	--accent-dark: #1c0056;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
+	--accent-overlay: #090b11;
 	--accent-subtle-overlay: var(--accent-overlay);
 	--accent-text-over: var(--gray-999);
 
@@ -30,27 +44,29 @@
 	--gradient-stop-2: var(--accent-regular);
 	--gradient-stop-3: var(--accent-dark);
 	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 150%);
-	--gradient-accent: linear-gradient(
-		150deg,
-		var(--gradient-stop-1),
-		var(--gradient-stop-2),
-		var(--gradient-stop-3)
-	);
-	--gradient-accent-orange: linear-gradient(
-		150deg,
-		#ca7879,
-		var(--accent-regular),
-		var(--accent-dark)
-	);
+	--gradient-accent: linear-gradient(150deg,
+			var(--gradient-stop-1),
+			var(--gradient-stop-2),
+			var(--gradient-stop-3));
+	--gradient-accent-orange: linear-gradient(150deg,
+			#ca7879,
+			var(--accent-regular),
+			var(--accent-dark));
 	--gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
 
 	/* Shadows */
-	--shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01), 0px 4px 2px rgba(9, 11, 17, 0.01),
-		0px 2px 2px rgba(9, 11, 17, 0.02), 0px 0px 1px rgba(9, 11, 17, 0.03);
-	--shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01), 0px 16px 10px rgba(9, 11, 17, 0.03),
-		0px 7px 7px rgba(9, 11, 17, 0.05), 0px 2px 4px rgba(9, 11, 17, 0.06);
-	--shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01), 0px 35px 21px rgba(9, 11, 17, 0.05),
-		0px 16px 16px rgba(9, 11, 17, 0.1), 0px 4px 9px rgba(9, 11, 17, 0.12);
+	--shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
+		0px 4px 2px rgba(9, 11, 17, 0.01),
+		0px 2px 2px rgba(9, 11, 17, 0.02),
+		0px 0px 1px rgba(9, 11, 17, 0.03);
+	--shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01),
+		0px 16px 10px rgba(9, 11, 17, 0.03),
+		0px 7px 7px rgba(9, 11, 17, 0.05),
+		0px 2px 4px rgba(9, 11, 17, 0.06);
+	--shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01),
+		0px 35px 21px rgba(9, 11, 17, 0.05),
+		0px 16px 16px rgba(9, 11, 17, 0.1),
+		0px 4px 9px rgba(9, 11, 17, 0.12);
 
 	/* Text Sizes */
 	--text-sm: 0.875rem;
@@ -64,10 +80,21 @@
 	--text-5xl: 4.5rem;
 
 	/* Fonts */
-	--font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-body: 'Public Sans', var(--font-system);
-	--font-brand: Rubik, var(--font-system);
+	--font-system: system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		'Open Sans',
+		'Helvetica Neue',
+		sans-serif;
+	--font-body: 'Public Sans',
+		var(--font-system);
+	--font-brand: 'GT Walsheim Pro',
+		var(--font-system);
 
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
@@ -89,22 +116,22 @@
 	--gray-999: #090b11;
 
 	--accent-light: #1c0056;
-	--accent-regular: #7611a6;
-	--accent-dark: #c561f6;
-	--accent-overlay: hsla(280, 89%, 67%, 0.33);
-	--accent-subtle-overlay: hsla(281, 81%, 36%, 0.33);
+	/* --accent-regular: #7611a6; */
+	/* --accent-dark: #c561f6; */
+	--accent-regular: #c3cadb;
+	--accent-dark: #e3e6ee;
+	--accent-overlay: hsla(0, 0%, 95%, 0.849);
+	--accent-subtle-overlay: hsla(0, 0%, 100%, 0.33);
 	--accent-text-over: var(--gray-0);
 
 	--link-color: var(--accent-dark);
 
 	--gradient-stop-1: #4c11c6;
 	--gradient-subtle: linear-gradient(150deg, var(--gray-900) 19%, var(--gray-999) 81%);
-	--gradient-accent-orange: linear-gradient(
-		150deg,
-		#ca7879,
-		var(--accent-regular),
-		var(--accent-light)
-	);
+	--gradient-accent-orange: linear-gradient(150deg,
+			#ca7879,
+			var(--accent-regular),
+			var(--accent-light));
 	--gradient-stroke: linear-gradient(180deg, var(--gray-600), var(--gray-800));
 
 	--shadow-sm: 0px 6px 3px rgba(255, 255, 255, 0.01), 0px 4px 2px rgba(255, 255, 255, 0.01),
@@ -205,24 +232,31 @@ h5 {
 .gap-2 {
 	gap: 0.5rem;
 }
+
 .gap-4 {
 	gap: 1rem;
 }
+
 .gap-8 {
 	gap: 2rem;
 }
+
 .gap-10 {
 	gap: 2.5rem;
 }
+
 .gap-15 {
 	gap: 3.75rem;
 }
+
 .gap-20 {
 	gap: 5rem;
 }
+
 .gap-30 {
 	gap: 7.5rem;
 }
+
 .gap-48 {
 	gap: 12rem;
 }
@@ -231,24 +265,31 @@ h5 {
 	.lg\:gap-2 {
 		gap: 0.5rem;
 	}
+
 	.lg\:gap-4 {
 		gap: 1rem;
 	}
+
 	.lg\:gap-8 {
 		gap: 2rem;
 	}
+
 	.lg\:gap-10 {
 		gap: 2.5rem;
 	}
+
 	.lg\:gap-15 {
 		gap: 3.75rem;
 	}
+
 	.lg\:gap-20 {
 		gap: 5rem;
 	}
+
 	.lg\:gap-30 {
 		gap: 7.5rem;
 	}
+
 	.lg\:gap-48 {
 		gap: 12rem;
 	}
