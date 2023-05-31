@@ -9,7 +9,7 @@ import Hero from "../components/Hero.astro";
 	title="About | Liudmila Amelchanka"
 	description="About Liudmila Amelchanka Lorem Ipsum"
 >
-	<div class="stack gap-20">
+	<div class="stack gap-20 pt-50">
 		<main class="wrapper about">
 			<div class="p-4 w-full stack gap-2">
 				<p>
@@ -74,12 +74,12 @@ import Hero from "../components/Hero.astro";
 	.about {
 		display: flex;
 		flex-direction: row;
-		gap: 3.5rem;
+		gap: 7.5rem;
+		padding-top: 50px;
 	}
 
 	img {
 		margin-top: 1.5rem;
-		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
 	}
 
@@ -116,10 +116,6 @@ import Hero from "../components/Hero.astro";
 			display: flex;
 			flex-direction: row;
 		}
-
-		/* .about > :global(:first-child) {
-			grid-column-start: 2;
-		} */
 
 		section {
 			display: contents;
