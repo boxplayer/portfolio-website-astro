@@ -4,8 +4,7 @@ publishDate: 2020-04-01 00:00:00
 img: /assets/luda-projects/arua.png
 img_alt: Arua
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  Beauty and wellness marketplace / social platform
 tags:
   - Design
   - Branding

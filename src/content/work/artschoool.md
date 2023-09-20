@@ -1,10 +1,10 @@
 ---
-title: Arua
+title: Artschoool
 publishDate: 2020-01-01 00:00:00
-img: /assets/luda-projects/arua-market.png
+img: /assets/luda-projects/artschoool.png
 img_alt: Sleepagotchi project
 description: |
-  We developed a virtual showcase for the softest bedding imaginable. We developed a virtual showcase for the softest bedding imaginable. We developed a virtual showcase for the softest bedding imaginable.
+  An online art school provides convenient access to top-notch art education
 tags:
   - Design
   - Dev

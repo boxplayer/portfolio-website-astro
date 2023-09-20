@@ -4,7 +4,7 @@ publishDate: 2020-02-01 00:00:00
 img: /assets/luda-projects/give-away.png
 img_alt: Sleepagotchi project
 description: |
-  We developed a virtual showcase for the softest bedding imaginable. We developed a virtual showcase for the softest bedding imaginable. We developed a virtual showcase for the softest bedding imaginable.
+  An Application to help people to get rid of the things in the house that are no longer needed
 tags:
   - Design
   - Dev
