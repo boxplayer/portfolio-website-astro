@@ -10,7 +10,7 @@ const { data, slug } = Astro.props.project;
 
 <div>
 	<!-- <a class="card" href={`/work/${slug}`}> -->
-		<a class="card">
+	<a class="card">
 		<img
 			src={data.img}
 			alt={data.img_alt || ""}
@@ -66,7 +66,13 @@ const { data, slug } = Astro.props.project;
 	.card-description {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		text-align: center;
+	}
+
+	.card-description p {
+		width: 75%;
+		margin: 0 auto;
 	}
 
 	img {
