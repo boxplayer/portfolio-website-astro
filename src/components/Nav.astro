@@ -158,13 +158,17 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 		position: relative;
 		display: flex;
 		border: 0;
+		border-radius: 0rem;
 		padding: 0.5rem;
 		font-size: 1.5rem;
 		color: var(--gray-300);
+		background: var(--gray-800);
+		box-shadow: var(--shadow-md);
 	}
 
-	.menu-button[aria-expanded="true"] {
+	.menu-button[aria-expanded='true'] {
 		color: var(--gray-0);
+		background: var(--gray-600),
 	}
 
 	.menu-button[hidden] {
@@ -174,7 +178,9 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 	.menu-button::before {
 		position: absolute;
 		inset: -1px;
-		content: "";
+		content: '';
+		background: var(--gradient-stroke);
+		border-radius: 0rem;
 		z-index: -1;
 	}
 
