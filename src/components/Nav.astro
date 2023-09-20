@@ -12,14 +12,19 @@ const textLinks: { label: string; href: string }[] = [
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 	{
-		label: "Instagram",
-		href: "https://instagram.com/liudmilme?igshid=OGQ5ZDc2ODk2ZA==",
-		icon: "instagram-logo",
+		label: "LinkedIn",
+		href: "https://www.linkedin.com/in/liudmilaamelchenko/",
+		icon: "linkedin-logo-2",
 	},
 	{
-		label: "Telegram",
-		href: "https://t.me/liudmilaamelchenko",
-		icon: "telegram-logo",
+		label: "Dribble",
+		href: "https://dribbble.com/liudmilaamelchenko",
+		icon: "dribble-logo",
+	},
+	{
+		label: "Behance",
+		href: "https://www.behance.net/liudmilaamelchenko",
+		icon: "behance-logo",
 	},
 ];
 ---
@@ -75,7 +80,7 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 			</div>
 
 			<div class="theme-toggle">
-				<ThemeToggle />
+				<!-- <ThemeToggle /> -->
 			</div>
 		</div>
 	</div>
@@ -256,7 +261,11 @@ const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
 			display: grid;
 			grid-template-columns: 3fr auto 1fr;
 			align-items: center;
-			padding: 1.5rem 4rem;
+			/* padding: 1.5rem 4.5rem; */
+			padding-top: 1.5rem;
+			padding-left: 4.5rem;
+			padding-right: 4.5rem;
+			padding-bottom: 0rem !important
 			gap: 1rem;
 		}
 
