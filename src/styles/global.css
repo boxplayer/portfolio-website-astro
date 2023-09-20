@@ -33,6 +33,7 @@
 	--accent-light: #3d4663;
 	--accent-regular: #090b11;
 	--accent-dark: #1c0056;
+	--accent-darker-dark: #0e0e0e;
 	--accent-overlay: #090b11;
 	--accent-subtle-overlay: var(--accent-overlay);
 	--accent-text-over: var(--gray-999);
