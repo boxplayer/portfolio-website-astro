@@ -1,86 +1,107 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
+import Icon, { Props as IconProps } from "../components/Icon.astro";
 import ContactCTA from "../components/ContactCTA.astro";
 import Hero from "../components/Hero.astro";
+
+const iconLinks: { label: string; href: string; icon: IconProps["icon"] }[] = [
+	{
+		label: "LinkedIn",
+		href: "https://www.linkedin.com/in/liudmilaamelchenko/",
+		icon: "linkedin-logo-2",
+	},
+	{
+		label: "Dribble",
+		href: "https://dribbble.com/liudmilaamelchenko",
+		icon: "dribble-logo",
+	},
+	{
+		label: "Behance",
+		href: "https://www.behance.net/liudmilaamelchenko",
+		icon: "behance-logo",
+	},
+];
 ---
 
 <BaseLayout
-	title="About | Liudmila Amelchenko"
-	description="About Liudmila Amelchenko Lorem Ipsum"
+	title="About | Jeanine White"
+	description="About Jeanine White Lorem Ipsum"
 >
-	<div class="stack gap-20 pt-50">
+	<!-- <div class="stack gap-20"> -->
+	<div class="layout">
+		<div></div>
 		<main class="wrapper about">
-			<div class="p-4 w-full stack gap-2">
-				<p>
-					Lorem ipsum dolor sit amet, <a href="https://astro.build/"
-						>Astro</a
-					> makes people happy. Sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Proin nibh nisl condimentum id venenatis
-					a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio
-					ut sem nulla pharetra diam sit amet. Diam quis enim lobortis
-					scelerisque fermentum dui faucibus in ornare.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, <a href="https://astro.build/"
-						>Astro</a
-					> makes people happy. Sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Proin nibh nisl condimentum id venenatis
-					a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio
-					ut sem nulla pharetra diam sit amet. Diam quis enim lobortis
-					scelerisque fermentum dui faucibus in ornare.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, <a href="https://astro.build/"
-						>Astro</a
-					> makes people happy. Sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Proin nibh nisl condimentum id venenatis
-					a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio
-					ut sem nulla pharetra diam sit amet. Diam quis enim lobortis
-					scelerisque fermentum dui faucibus in ornare.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, <a href="https://astro.build/"
-						>Astro</a
-					> makes people happy. Sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Proin nibh nisl condimentum id venenatis
-					a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio
-					ut sem nulla pharetra diam sit amet. Diam quis enim lobortis
-					scelerisque fermentum dui faucibus in ornare.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, <a href="https://astro.build/"
-						>Astro</a
-					> makes people happy. Sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Proin nibh nisl condimentum id venenatis
-					a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio
-					ut sem nulla pharetra diam sit amet. Diam quis enim lobortis
-					scelerisque fermentum dui faucibus in ornare.
-				</p>
-			</div>
-			<div class="p-4 w-full">
-				<img
-					width="1553"
-					height="900"
-					src="/assets/luda-working.jpg"
-					alt="Liudmila Amelchenko"
-				/>
-			</div>
+			<img
+				width="400"
+				height="200"
+				src="/assets/about-pic.png"
+				alt="Liudmila"
+			/>
+
+			<section>
+				<div class="content">
+					<p style="font-size: var(--text-lg);"><b>Hello!</b></p>
+					<p>
+						I’m glad you are here. My name is Liudmila and I’m a
+						Product designer based in Warsaw, Poland.
+					</p>
+					<p>
+						I’m designer with over 12 years of experience in digital
+						design. The last 7 years I have been working as a UX/UI
+						designer - helping startups and business transform their
+						business ideas into working products.
+					</p>
+					<p>
+						When I'm not designing, I find joy in the realm of
+						painting.
+					</p>
+					<p>
+						For all collaborations & client inquiries please contact
+						<a
+							href="liudmilaamelchenko@gmail.com"
+							style="text-decoration: underline;"
+							><b>liudmilaamelchenko@gmail.com</b></a
+						>
+					</p>
+					<div class="socials">
+						{
+							iconLinks.map(({ href, icon, label }) => (
+								<a href={href} class="social" target="_blank">
+									<span class="sr-only">{label}</span>
+									<Icon icon={icon} />
+								</a>
+							))
+						}
+					</div>
+				</div>
+			</section>
 		</main>
+		<div></div>
 	</div>
 </BaseLayout>
 
 <style>
-	.about {
+	.socials {
 		display: flex;
 		flex-direction: row;
-		gap: 7.5rem;
-		padding-top: 50px;
+		gap: 1.5rem;
+	}
+	.centered-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* Center horizontally */
+		text-align: left;
+		gap: 3.5rem;
+	}
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
 	}
 
 	img {
 		margin-top: 1.5rem;
-		box-shadow: var(--shadow-md);
+		border-radius: 1.5rem;
 	}
 
 	section {
@@ -98,6 +119,14 @@ import Hero from "../components/Hero.astro";
 
 	.content {
 		grid-column: 2 / 4;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.content p {
+		margin-bottom: 1.5rem;
+		font-size: var(--text-md);
 	}
 
 	.content :global(a) {
@@ -112,9 +141,19 @@ import Hero from "../components/Hero.astro";
 	}
 
 	@media (min-width: 50em) {
+		.layout {
+			display: grid;
+			grid-template-columns: 300px 1fr 300px; /* Create a 3x3 grid */
+			gap: 1rem;
+			text-align: left; /* Center text within grid items */
+			justify-items: center; /* Center horizontally within grid items */
+			align-items: center; /* Center vertically within grid items */
+			min-height: 80vh; /* Ensure the grid covers the full viewport height */
+		}
 		.about {
 			display: flex;
 			flex-direction: row;
+			gap: 7.5rem;
 		}
 
 		section {
