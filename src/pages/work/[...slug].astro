@@ -45,7 +45,7 @@ const { Content } = await entry.render();
                     </Hero>
                 </div>
             </header>
-            <main class="wrapper">
+            <main class="wrapper poster-padding">
                 <img
                     src={entry.data.poster_img}
                     alt={entry.data.img_alt || ""}
@@ -138,6 +138,11 @@ const { Content } = await entry.render();
         .back-link {
             display: block;
             align-self: flex-start;
+        }
+
+        .poster-padding {
+            padding-left: 10%;
+            padding-right: 10%;
         }
 
         .details {
