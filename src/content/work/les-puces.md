@@ -3,13 +3,14 @@ title: Les Puces
 publishDate: 2020-05-01 00:00:00
 img: /assets/luda-projects/les-puces.png
 img_alt: Les Puces
-poster_img: /assets/luda-case-studies/les-puces.jpg
+poster_img: /assets/luda-case-studies/les-puces.png
 description: |
   A kids fashion online store with niche brands and top quality clothing
 tags:
   - Design
-  - Dev
-  - User Testing
+  - User Research
+  - User Flow
+  - Prototype
 ---
 
 ## Resposive Web Design 

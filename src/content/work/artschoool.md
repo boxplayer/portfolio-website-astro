@@ -3,8 +3,8 @@ title: Artschoool
 publishDate: 2020-01-01 00:00:00
 img: /assets/luda-projects/artschoool.png
 img_alt: Sleepagotchi project
-description: |
-  An online art school provides convenient access to top-notch art education
+poster_img: /assets/luda-case-studies/сoming soon.png
+description: An online art school provides convenient access to top-notch art education
 tags:
   - Design
   - Dev
