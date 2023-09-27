@@ -5,7 +5,7 @@ img: /assets/luda-projects/give-away.png
 img_alt: Sleepagotchi project
 poster_img: /assets/luda-case-studies/сoming soon.png
 description: |
-  An Application to help people to get rid of the things in the house that are no longer needed
+  Marketptlace to help people to get rid of the things in the house that are no longer needed
 tags:
   - Design
   - Dev
