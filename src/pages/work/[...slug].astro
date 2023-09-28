@@ -30,7 +30,7 @@ const { Content } = await entry.render();
 <BaseLayout title={entry.data.title} description={entry.data.description}>
   <div class="stack gap-20">
     <div class="stack gap-15">
-      <header>
+      <header class="hide-on-mobile">
         <div class="wrapper stack gap-2"></div>
       </header>
 
@@ -41,7 +41,7 @@ const { Content } = await entry.render();
             >
           </div>
           <div>
-            <a class="url-link" href={entry.data.project_url}
+            <a class="url-link" target="_blank" href={entry.data.project_url}
               >{entry.data.project_url}</a
             >
           </div>
@@ -58,6 +58,9 @@ const { Content } = await entry.render();
 </BaseLayout>
 
 <style>
+  .hide-on-mobile {
+    display: none;
+  }
   header {
     padding-bottom: 2.5rem;
     border-bottom: 1px solid var(--gray-800);
@@ -147,6 +150,9 @@ const { Content } = await entry.render();
   }
 
   @media (min-width: 50em) {
+    .hide-on-mobile {
+      display: block;
+    }
     .back-link {
       display: block;
       align-self: flex-start;
