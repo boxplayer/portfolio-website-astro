@@ -10,6 +10,7 @@ export const collections = {
 			img: z.string(),
 			img_alt: z.string().optional(),
 			poster_img: z.string().optional(),
+			project_url: z.string().optional(),
 		}),
 	}),
 };

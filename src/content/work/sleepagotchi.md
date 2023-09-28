@@ -4,6 +4,7 @@ publishDate: 2020-06-01 00:00:00
 img: /assets/luda-projects/sleepagotchi.png
 img_alt: Sleepagotchi project
 poster_img: /assets/luda-case-studies/sleepagotchi.png
+project_url: "www.sleepagotchi.com"
 description: Mobile App Design for an application that aims to help you achieve a consistent sleep schedule
   
 tags:

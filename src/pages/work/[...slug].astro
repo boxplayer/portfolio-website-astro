@@ -35,8 +35,16 @@ const { Content } = await entry.render();
       </header>
 
       <main class="wrapper poster-padding">
-        <div class="stack back-link-padding">
-          <a class="back-link" href="/"><Icon icon="arrow-left" /> Projects</a>
+        <div class="top-poster">
+          <div class="stack back-link-padding">
+            <a class="back-link" href="/"><Icon icon="arrow-left" /> Projects</a
+            >
+          </div>
+          <div>
+            <a class="url-link" href={entry.data.project_url}
+              >{entry.data.project_url}</a
+            >
+          </div>
         </div>
         <img
           src={entry.data.poster_img}
@@ -57,6 +65,13 @@ const { Content } = await entry.render();
 
   .back-link {
     display: none;
+  }
+
+  .top-poster {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: var(--text-md);
   }
 
   .back-link-padding {
@@ -137,6 +152,11 @@ const { Content } = await entry.render();
       align-self: flex-start;
     }
 
+    .url-link {
+      display: block;
+      align-self: flex-end;
+      font-size: var(--text-lg);
+    }
     .poster-padding {
       padding-left: 10%;
       padding-right: 10%;
