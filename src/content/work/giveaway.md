@@ -3,7 +3,7 @@ title: GiveAway
 publishDate: 2020-02-01 00:00:00
 img: /assets/luda-projects/give-away.png
 img_alt: Sleepagotchi project
-poster_img: /assets/luda-case-studies/сoming soon.png
+poster_img: /assets/luda-case-studies/giveaway.png
 description: |
   P2P marketptlace for used things. Give away things fast & easy.
 tags:
