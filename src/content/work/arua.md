@@ -3,7 +3,7 @@ title: Beauty Social Marketplace
 publishDate: 2020-04-01 00:00:00
 img: /assets/luda-projects/arua.png
 img_alt: Arua
-poster_img: /assets/luda-case-studies/сoming soon.png
+poster_img: /assets/luda-case-studies/comingsoon.png
 description: Beauty and wellness marketplace / social platform
 tags:
   - Design

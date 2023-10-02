@@ -3,7 +3,7 @@ title: Woman Health
 publishDate: 2020-03-01 00:00:00
 img: /assets/luda-projects/arua-health.png
 img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
-poster_img: /assets/luda-case-studies/сoming soon.png
+poster_img: /assets/luda-case-studies/comingsoon.png
 description: Mobile app that helps women track their cycle and provides personal insights on health and well-being
 tags:
   - Dev
